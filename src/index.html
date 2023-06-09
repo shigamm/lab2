@@ -1,176 +1,129 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>lab 2</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.scss">
+    <title>Document</title>
 </head>
 <body>
+    <div class="bg-image" style="background-image: url(1.jpg)">
+        <header>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container">
+                    <div class="navbar-brand d-flex align-items-center">
+                        <img src="main_2x.jpg" width="100" height="100" alt="" class="plank img-fluid">
+                        <a href="#" class="text-danger" style="text-decoration: none;">
+                            <p class="amogus">Сад теней</p>
+                        </a>
+                    </div>
+                    <button type="button" class="Atomic">Atomic</button>
+                </div>
+            </nav>
+        </header>
+        <main>
+          <div class = "row signature">
+            <h1>Состав сада теней</h1>
+          </div>
+          <div class="container">
+            <div class="row row-cols-xs-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 myclass">
+              <div class="col-12 col-sm-8 col-md-4 col-lg-4 col-xl-4 g-3 cl">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modal" id="object-1">
+                  <img src="5.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Тень</h5>
+                    <p class="card-text">Лидер секретной организации "Сад Теней"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-8 col-md-4 col-lg-4 col-xl-4 g-3 cl">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modal" id="object-2">
+                  <img src="1.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Альфа</h5>
+                    <p class="card-text">Заместитель командира Сада Теней, руководящий всеми вылазками организации</p>
 
-<header class="header">
-    <div class="container">
-        <div class="nav">
-            <div class="header-content">
-                <div class="header-right">
-                    <div class="header-logo">
-                        <div class="header-logo-inner">d</div>
-                    </div>
+                  </div>
                 </div>
-                <div class="header-left">
-                    <div class="header-title">Название сайта</div>
-                    <div class="header-btn" id="liveToastBtn">Загрузить</div>
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                            <div class="toast-header">
-                                <div class="load-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M304 48C304 74.51 282.5 96 256 96C229.5 96 208 74.51 208 48C208 21.49 229.5 0 256 0C282.5 0 304 21.49 304 48zM304 464C304 490.5 282.5 512 256 512C229.5 512 208 490.5 208 464C208 437.5 229.5 416 256 416C282.5 416 304 437.5 304 464zM0 256C0 229.5 21.49 208 48 208C74.51 208 96 229.5 96 256C96 282.5 74.51 304 48 304C21.49 304 0 282.5 0 256zM512 256C512 282.5 490.5 304 464 304C437.5 304 416 282.5 416 256C416 229.5 437.5 208 464 208C490.5 208 512 229.5 512 256zM74.98 437C56.23 418.3 56.23 387.9 74.98 369.1C93.73 350.4 124.1 350.4 142.9 369.1C161.6 387.9 161.6 418.3 142.9 437C124.1 455.8 93.73 455.8 74.98 437V437zM142.9 142.9C124.1 161.6 93.73 161.6 74.98 142.9C56.24 124.1 56.24 93.73 74.98 74.98C93.73 56.23 124.1 56.23 142.9 74.98C161.6 93.73 161.6 124.1 142.9 142.9zM369.1 369.1C387.9 350.4 418.3 350.4 437 369.1C455.8 387.9 455.8 418.3 437 437C418.3 455.8 387.9 455.8 369.1 437C350.4 418.3 350.4 387.9 369.1 369.1V369.1z"/>
-                                    </svg>
-                                </div>
-                                <strong class="me-auto">Загрузить</strong>
-                                <button type="button" class="btn-close" data-bs-dismiss="toast"
-                                        aria-label="Закрыть"></button>
-                            </div>
-                            <div class="toast-body">
-                                На текущий момент этот функционал недоступен
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="container">
-    <div class="wrapper">
-        <div class="content">
-            <h1 class="title">Заголовок первого уровня</h1>
-            <div class="row gy-4 gx-4">
-                <div class="col-item col-sm-6 col-lg-4 col-xl-4">
-                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-num="0">
-                        <div class="item-title">
-                            Тип объекта
-                        </div>
-                        <div class="item-img">
-                            <img class="img-fluid" src="img/img.jpg" alt="">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Название объекта</div>
-                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-                                dolores ducimus exercitationem nemo quam soluta.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-item col-sm-6 col-lg-4 col-xl-4">
-                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-num="1">
-                        <div class="item-title">
-                            Тип объекта
-                        </div>
-                        <div class="item-img">
-                            <img class="img-fluid" src="img/img.jpg" alt="">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Название объекта</div>
-                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-                                dolores ducimus exercitationem nemo quam soluta.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-item col-sm-6 col-lg-4 col-xl-4">
-                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-num="2">
-                        <div class="item-title">
-                            Тип объекта
-                        </div>
-                        <div class="item-img">
-                            <img class="img-fluid" src="img/img.jpg" alt="">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Название объекта</div>
-                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-                                dolores ducimus exercitationem nemo quam soluta.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-item col-sm-6 col-lg-4 col-xl-4">
-                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-num="3">
-                        <div class="item-title">
-                            Тип объекта
-                        </div>
-                        <div class="item-img">
-                            <img class="img-fluid" src="img/img.jpg" alt="">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Название объекта</div>
-                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-                                dolores ducimus exercitationem nemo quam soluta.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-item col-sm-6 col-lg-4 col-xl-4">
-                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-num="4">
-                        <div class="item-title">
-                            Тип объекта
-                        </div>
-                        <div class="item-img">
-                            <img class="img-fluid" src="img/img.jpg" alt="">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Название объекта</div>
-                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-                                dolores ducimus exercitationem nemo quam soluta.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              </div>
+              <div class="col-12 col-sm-8 col-md-4 col-lg-4 col-xl-4 g-3 cl">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modal" id="object-3">
+                  <img src="2.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Бета</h5>
+                    <p class="card-text">Второй участник "Сада Теней", занимающийся сбором информации в рядах противника</p>
 
-        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-8 col-md-4 col-lg-4 col-xl-4 g-3 cl">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modal" id="object-4">
+                  <img src="4.webp" class="card-img-top img-fluid" alt="-">
+                  <div class="card-body">
+                    <h5 class="card-title">Гамма</h5>
+                    <p class="card-text">Третий участник "Сада Теней", управляющий внутренними делами организации, финансами и логистикой.</p>
+        
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-8 col-md-4 col-lg-4 col-xl-4 g-3 cl">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modal" id="object-5">
+                  <img src="3.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Дельта</h5>
+                    <p class="card-text">Четвертый участник "Сада Теней", являющийся основной ударной силой "Сада Теней"</p>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel" popover.hover.top="Popover!" title="Бутерброд">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" popover.hover.top="Popover!" title="Состав">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" popover.hover.top="Popover!" title="Закрыть">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-fixed top-0 end-0 p-3">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">Err00r</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  I am Atomic!
+                </div>
+              </div>
+          </div>
+        </main>
+        <footer>
+          <div class="container d-flex justify-content-between">
+            <div class="about font-weight-bold">Сaгадеев Артур</div>
+            <div class="base">
+              <a href=""
+                ><img src="f1.png" alt="vk" class="icons"
+              /></a>
+              <a href=""
+                ><img src="f2.png" alt="instagram" class="icons"
+              /></a>
+              <a href=""
+                ><img src="f3.png" alt="twitter" class="icons"
+              /></a>
+            </div>
+          </div>
+        </footer>
     </div>
-</div>
-</div>
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-name">
-               Шихова Анна
-            </div>
-            <div class="footer__soc">
-                <a href="#" class="footer__soc-item">
-                    <img src="img/fb.svg" alt="" class="footer__soc-icon">
-                </a>
-                <a href="#" class="footer__soc-item">
-                    <img src="img/tw.svg" alt="" class="footer__soc-icon">
-                </a>
-                <a href="#" class="footer__soc-item">
-                    <img src="img/inst.svg" alt="" class="footer__soc-icon">
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel">Модальное окно</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odit perferendis quisquam sequi sunt,
-                vero?
-            </div>
-        </div>
-    </div>
-</div>
-
-<script type="module" src="js/script.js">
-</script>
+  <script type="module" src="js/index.js"></script>
 </body>
 </html>

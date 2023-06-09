@@ -1,22 +1,24 @@
 {
-  "name": "task_4",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "parcel src/index.html src/js/script.js src/scss/style.scss"
-  },
-  "author": "Tatyana",
-  "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "parcel-transformer-hbs": "^1.0.4"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
-    "git": "^0.1.5",
     "jquery": "^3.6.4",
-    "transformer": "^1.2.8"
-  }
+    "popper": "^1.0.1"
+  },
+  "name": "3",
+  "version": "1.0.0",
+  "default": "./src/index.html",
+  "scripts": {
+    "test": "mocha",
+    "dev": "parcel src/index.html",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
