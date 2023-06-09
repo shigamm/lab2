@@ -1,0 +1,167 @@
+@import "~bootstrap/scss/bootstrap";
+$main_color: #0440af;
+$border_color: #454242;
+$k: 60;
+$color_item: #33343b;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.header {
+  background: #f3eded;
+  border: 1px solid $border-color;
+  margin-bottom: 1rem;
+
+  &-logo {
+    width: 3rem;
+    height: 4rem;
+    background: $main-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 1rem;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  &-title {
+    color: $main-color;
+  }
+
+  &-btn {
+    background: $main-color;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &-left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  &-right {
+    height: 100%;
+  }
+}
+
+.footer {
+  flex: 0 0 auto;
+  padding: 2rem 0;
+  border-top: 1px solid $border-color;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__soc {
+    display: flex;
+    align-items: center;
+  }
+
+  &__soc-item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__soc-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}
+
+.content {
+  flex: 1 0 auto;
+  margin-bottom: 2rem;
+}
+
+@mixin cycle_color($color) {
+  @for $i from 0 to $k {
+    &:nth-child(#{$i}) {
+      $mcolor: ($i % 10) * 15; //light
+      @if $mcolor >= 100 {
+        $mcolor: $mcolor%100;
+      }
+      color: lighten($color, $mcolor)
+    }
+  }
+}
+
+
+.load-icon {
+  svg {
+    width: 20px;
+    height: 20px;
+    animation: 2s linear 0s normal none infinite running rotation;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.col-item {
+  @include cycle_color(black);
+}
+
+.item {
+  position: relative;
+
+  &-title {
+    font-weight: bold;
+    background: #c9c9da;
+    padding: 2px 1px;
+    display: inline-block;
+    border: 1px solid #5f5fce;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  &-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &-img {
+    margin-bottom: 1rem;
+  }
+}
